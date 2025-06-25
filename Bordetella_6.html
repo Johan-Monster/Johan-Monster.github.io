@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tos Ferina: Prevención</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f4f8;
+            color: #333;
+        }
+        header {
+            background-color: #1a3c5e;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1.5rem;
+        }
+        .intro-section {
+            background-color: #ffffff;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+        .accordion {
+            margin: 2rem 0;
+        }
+        .accordion-item {
+            background-color: #e0f7fa;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+        .accordion-header {
+            padding: 1.5rem;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            background-color: #00796b;
+            color: white;
+            font-size: 1.2rem;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+        .accordion-header:hover {
+            background-color: #1a3c5e;
+        }
+        .accordion-icon {
+            margin-right: 1rem;
+            font-size: 1.5rem;
+        }
+        .accordion-content {
+            padding: 1.5rem;
+            display: none;
+            background-color: #e0f7fa;
+        }
+        .accordion-content.active {
+            display: block;
+        }
+        .accordion-content ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .accordion-content ul li {
+            margin: 0.5rem 0;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+        .accordion-content ul li::before {
+            content: '✔';
+            color: #1a3c5e;
+            position: absolute;
+            left: 0;
+            font-size: 1rem;
+        }
+        .video-placeholder, .image-placeholder {
+            width: 100%;
+            height: 200px;
+            background-color: #e0f7fa;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 8px;
+            color: #1a3c5e;
+            font-weight: bold;
+            margin: 2rem 0;
+            text-align: center;
+        }
+        .button-container {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+        .return-button, .more-info-button {
+            padding: 0.75rem 1.5rem;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+            text-align: center;
+        }
+        .return-button {
+            background-color: #1a3c5e;
+            color: white;
+        }
+        .return-button:hover {
+            background-color: #00796b;
+        }
+        .more-info-button {
+            background-color: #00796b;
+            color: white;
+        }
+        .more-info-button:hover {
+            background-color: #1a3c5e;
+        }
+        footer {
+            background-color: #1a3c5e;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const headers = document.querySelectorAll('.accordion-header');
+            headers.forEach(header => {
+                header.addEventListener('click', () => {
+                    const content = header.nextElementSibling;
+                    const isActive = content.classList.contains('active');
+                    document.querySelectorAll('.accordion-content').forEach(item => {
+                        item.classList.remove('active');
+                    });
+                    if (!isActive) {
+                        content.classList.add('active');
+                    }
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Tos Ferina: Prevención</h1>
+    </header>
+    <div class="container">
+
+      <video controls>
+
+     <source src="D:\Videos\Download (9).mp4">
+            Tu navegador no soporta el video.
+        </video>
+
+
+            <p>Prevenir la tos ferina, causada por la bacteria <em>Bordetella pertussis</em>, es esencial para proteger a las comunidades, especialmente a los grupos más vulnerables. A través de estrategias como la vacunación, la higiene y la educación, podemos reducir significativamente la incidencia de esta enfermedad altamente contagiosa.</p>
+        </div>
+        <h2>Estrategias Clave para la Prevención</h2>
+        <div class="accordion">
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    
+                    Vacunación Generalizada
+                </div>
+                <div class="accordion-content">
+                    <ul>
+                        <li>Administre la vacuna DTaP a niños en las edades recomendadas (2, 4, 6, 15-18 meses, y 4-6 años).</li>
+                        <li>Asegure refuerzos con la vacuna Tdap para adolescentes (11-12 años) y adultos, especialmente mujeres embarazadas (semanas 27-36).</li>
+                        <li>Vacune a los contactos cercanos de bebés para crear una barrera protectora (estrategia de "capullo").</li>
+                        <li>Verifique el estado de vacunación en comunidades para prevenir brotes.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    
+                    Higiene Respiratoria
+                </div>
+                <div class="accordion-content">
+                    <ul>
+                        <li>Cúbrase la boca y la nariz con un pañuelo o el codo al toser o estornudar.</li>
+                        <li>Lávese las manos frecuentemente con agua y jabón durante al menos 20 segundos.</li>
+                        <li>Use mascarillas en entornos concurridos, especialmente durante brotes.</li>
+                        <li>Deseche los pañuelos usados inmediatamente y desinfecte superficies contaminadas.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-header">
+                   
+                    Control de la Exposición
+                </div>
+                <div class="accordion-content">
+                    <ul>
+                        <li>Aísle a las personas con síntomas de tos ferina hasta que un médico lo evalúe.</li>
+                        <li>Evite el contacto cercano con bebés o personas inmunocomprometidas si tiene síntomas respiratorios.</li>
+                        <li>Mantenga una buena ventilación en espacios cerrados, como hogares y aulas.</li>
+                        <li>Limite la asistencia a eventos masivos durante brotes locales de tos ferina.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    
+                    Educación Comunitaria
+                </div>
+                <div class="accordion-content">
+                    <ul>
+                        <li>Promueva campañas de concienciación sobre la importancia de la vacunación.</li>
+                        <li>Eduque a las familias sobre los síntomas de la tos ferina para buscar atención temprana.</li>
+                        <li>Capacite a los trabajadores de la salud para identificar y manejar casos rápidamente.</li>
+                        <li>Distribuya materiales informativos en escuelas, clínicas y centros comunitarios.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxvQ_DQicJcxs0eKTptA_oY3F2AyjHB2BdCw&s"style="width: 100%; height: auto;">
+
+
+
+        <p>La prevención de la tos ferina es un esfuerzo colectivo que combina medidas individuales y comunitarias. Al priorizar estas estrategias, podemos proteger a los más vulnerables y reducir la carga de esta enfermedad en nuestras comunidades.</p>
+       
+ <video controls>
+
+     <source src="D:\Videos\Download (3).mp4">
+            Tu navegador no soporta el video.
+        </video>
+
+
+
+            
+<a href="file:///D:/Inferno/Bordetella%20Peturssis/Bordetella_1.html#" class="return-button">Regresar</a>
+
+            <a href="file:///D:/Inferno/Bordetella%20Peturssis/Bordetella_7.html" class="more-info-button">Más Información</a>
+        </div>
+    </div>
+    <footer>
+        <p>© 2025 Información sobre Tos Ferina. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
